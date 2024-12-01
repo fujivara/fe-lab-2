@@ -1,0 +1,21 @@
+{
+  "name": "fe-lab-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "page-1": "sass page-1/styles.scss:css/page-1.css",
+    "page-1:watch": "sass --watch page-1/styles.scss:css/page-1.css",
+    "page-2": "stylus page-2/styles.styl -o css/page-2.css",
+    "page-2:watch": "stylus -w page-2/styles.styl -o css/page-2.css",
+    "page-3": "sass page-3/styles.scss:css/page-3.css",
+    "page-3:watch": "sass --watch page-3/styles.scss:css/page-3.css",
+    "page-4": "stylus page-4/styles.styl -o css/page-4.css",
+    "page-4:watch": "stylus -w page-4/styles.styl -o css/page-4.css",
+    "page-5": "sass page-5/styles.scss:css/page-5.css",
+    "page-5:watch": "sass --watch page-5/styles.scss:css/page-5.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

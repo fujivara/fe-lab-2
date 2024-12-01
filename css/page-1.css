@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  * {
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  * {
+    font-size: 80%;
+  }
+}
+
+body {
+  position: relative;
+  background-color: rgb(194, 194, 194);
+  color: rgb(162, 162, 162);
+}
+
+.header {
+  background-color: rgb(45, 45, 45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+@media only screen and (max-width: 400px) {
+  .header {
+    padding: 0 0.5rem;
+  }
+}
+.header .logo {
+  height: 5rem;
+}
+.header .search {
+  background-color: white;
+  position: relative;
+  border-radius: 0.5rem;
+}
+.header .search .label-icon {
+  position: absolute;
+  top: 20%;
+  right: 4%;
+  cursor: pointer;
+}
+.header .search .label-icon img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header .search input {
+  all: unset;
+  background-color: transparent;
+  border: 1px solid rgb(45, 45, 45);
+  padding: 0.5rem 1rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: rgb(45, 45, 45);
+  position: fixed;
+  top: 5.5rem;
+  left: 0.7rem;
+  right: 0.7rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-top: 10.5rem;
+  padding-bottom: 1rem;
+  min-height: calc(100vh - 5.5rem);
+}
+.main .center {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 20%;
+}
+@media only screen and (max-width: 800px) {
+  .main .center {
+    width: 100%;
+    margin: 0 1rem;
+  }
+}
+.main .center .content {
+  background-color: rgb(45, 45, 45);
+  padding: 1rem;
+}
+.main .center .content .picture {
+  width: 20rem;
+  height: 20rem;
+  float: left;
+  margin-right: 1rem;
+}
+.main .center .content p {
+  font-size: 1.4rem;
+}
+.main .side-bar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 2rem 1rem;
+  width: 15%;
+  background-color: rgb(45, 45, 45);
+  right: 0.7rem;
+}
+@media only screen and (max-width: 800px) {
+  .main .side-bar {
+    display: none;
+  }
+}
+.main .side-bar.left {
+  min-height: calc(100vh - 15.5rem);
+  left: 0.7rem;
+}
+
+.item {
+  cursor: pointer;
+}
+.item:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=page-1.css.map */
